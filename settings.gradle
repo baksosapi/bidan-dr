@@ -1,0 +1,2 @@
+rootProject.name = 'app-bidan-dr'
+include ':opensrp-path', ':app-bidan'
