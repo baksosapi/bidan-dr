@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    >
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/listview_background_rounded">
+
+        <TableRow>
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="EDD : "
+                android:layout_margin="5dp"
+                android:id="@+id/lbl_ancDate"
+                android:textSize="14sp"
+                android:textColor="@color/text_black" />
+
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="N/A "
+                android:layout_margin="5dp"
+                android:id="@+id/txt_b_edd"
+                android:textSize="14sp"
+                android:textColor="@color/text_black" />
+
+
+        </TableRow>
+        <TableRow>
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="Last Visit Date : "
+                android:id="@+id/lbl_ancKe"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="N/A"
+                android:id="@+id/txt_b_lastvisit"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="Location of Service  : "
+                android:id="@+id/lbl_Keterangan_k1k4"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="N/A"
+                android:id="@+id/txt_b_location"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="Date of estimated delivery : "
+                android:id="@+id/lbl_kunjunganKe"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="N/A"
+                android:id="@+id/txt_b_edd2"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+        </TableRow>
+
+
+
+        <TableRow>
+
+
+
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="Birth Attendant  : "
+                android:id="@+id/lbl_tanggalHPHT"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="N/A"
+                android:id="@+id/txt_b_attend"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+        </TableRow>
+
+        <TableRow>
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="Intended place for labor : "
+                android:id="@+id/lbl_usiaKlinis"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="N/A"
+                android:id="@+id/txt_b_place"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+        </TableRow>
+
+        <TableRow>
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="Person(s) accompanying during labor : "
+                android:id="@+id/lbl_trimesterKe"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="N/A"
+                android:id="@+id/txt_b_person"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+        </TableRow>
+
+        <TableRow>
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="Transportation  : "
+                android:id="@+id/lbl_bbKg"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="N/A"
+                android:id="@+id/txt_b_transport"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+        </TableRow>
+
+        <TableRow>
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="Blood donor  : "
+                android:id="@+id/lbl_tandaVitalTDSistolik"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="N/A"
+                android:id="@+id/txt_b_blood"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+        </TableRow>
+
+        <TableRow>
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="Mother house ownership is permanent  : "
+                android:id="@+id/lbl_tandaVitalTDDiastolik"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="N/A"
+                android:id="@+id/txt_b_houser"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+        </TableRow>
+
+        <TableRow>
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="Stock of labor tools  : "
+                android:id="@+id/lbl_hasilPemeriksaanLILA"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+            <org.smartregister.view.customcontrols.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/CustomFontTextViewStyle.ListView.Medium"
+                android:text="N/A"
+                android:id="@+id/txt_b_stock"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/text_black" />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+</LinearLayout>
+</ScrollView>
