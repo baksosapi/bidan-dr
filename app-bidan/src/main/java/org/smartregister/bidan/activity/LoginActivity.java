@@ -70,6 +70,14 @@ import static org.smartregister.util.Log.logVerbose;
 public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = LoginActivity.class.getName();
+    public static final String ENGLISH_LOCALE = "en";
+    private static final String URDU_LOCALE = "ur";
+    private static final String ENGLISH_LANGUAGE = "English";
+    private static final String BAHASA_LANGUAGE = "BAHASA";
+    private static final String URDU_LANGUAGE = "Urdu";
+    private static final String BAHASA_LOCALE = "in";
+    private static final String LOCALE_LANG = BAHASA_LOCALE;
+
     private android.content.Context appContext;
     private Context context;
 
@@ -112,12 +120,53 @@ public class LoginActivity extends AppCompatActivity {
         initializeBuildDetails();
         setDoneActionHandlerOnPasswordField();
         initializeProgressDialog();
-//
-//        setLanguage();
+        setLanguage();
+
         if (BuildConfig.DEBUG) {
             debugApp();
         }
 
+    }
+
+    public static void setLanguage() {
+        AllSharedPreferences allSharedPreferences = new AllSharedPreferences(getDefaultSharedPreferences(getOpenSRPContext().applicationContext()));
+        String preferredLocale = allSharedPreferences.fetchLanguagePreference();
+        if(!preferredLocale.equals(LOCALE_LANG)) {
+            switchLanguagePreference();
+            preferredLocale = allSharedPreferences.fetchLanguagePreference();
+        }
+        Resources res = getOpenSRPContext().applicationContext().getResources();
+        // Change locale settings in the app.
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = new Locale(preferredLocale);
+        res.updateConfiguration(conf, dm);
+
+    }
+
+    public static String switchLanguagePreference() {
+        AllSharedPreferences allSharedPreferences = new AllSharedPreferences(getDefaultSharedPreferences(Context.getInstance().applicationContext()));
+
+        String preferredLocale = allSharedPreferences.fetchLanguagePreference();
+        if (ENGLISH_LOCALE.equals(preferredLocale)) {
+            allSharedPreferences.saveLanguagePreference(BAHASA_LOCALE);
+            Resources res = Context.getInstance().applicationContext().getResources();
+            // Change locale settings in the app.
+            DisplayMetrics dm = res.getDisplayMetrics();
+            android.content.res.Configuration conf = res.getConfiguration();
+            conf.locale = new Locale(BAHASA_LOCALE);
+            res.updateConfiguration(conf, dm);
+            return BAHASA_LANGUAGE;
+        } else {
+            allSharedPreferences.saveLanguagePreference(ENGLISH_LOCALE);
+            Resources res = Context.getInstance().applicationContext().getResources();
+            // Change locale settings in the app.
+            DisplayMetrics dm = res.getDisplayMetrics();
+            android.content.res.Configuration conf = res.getConfiguration();
+            conf.locale = new Locale(ENGLISH_LOCALE);
+            res.updateConfiguration(conf, dm);
+            return ENGLISH_LANGUAGE;
+        }
     }
 
     @Override

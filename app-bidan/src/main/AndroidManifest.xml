@@ -29,18 +29,52 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".activity.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activity.ChildSmartRegisterActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask"
             android:screenOrientation="landscape"
             android:theme="@style/AppThemeNoActionBarAndTitle" />
 
-        <activity
-            android:name=".activity.BidanHomeActivity"
+        <!--<activity-->
+            <!--android:name=".activity.BidanHomeActivity"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:screenOrientation="landscape"-->
+            <!--android:theme="@style/AppThemeNoActionBarAndTitle" />-->
+
+        <activity android:name=".activity.BidanHomeActivity"
+            android:theme="@style/AppBidanTheme"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".activity.KMotherSmartRegisterActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:launchMode="singleTask"
-            android:screenOrientation="landscape"
-            android:theme="@style/AppThemeNoActionBarAndTitle" />
+            android:theme="@style/AppThemeNoActionBarAndTitle"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activity.KFPSmartRegisterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppThemeNoActionBarAndTitle"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activity.KANCSmartRegisterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppThemeNoActionBarAndTitle"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activity.KPNCSmartRegisterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppThemeNoActionBarAndTitle"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activity.KChildSmartRegisterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppThemeNoActionBarAndTitle"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="landscape"/>
+
 
     </application>
 

@@ -1,0 +1,64 @@
+{
+  "form_data_definition_version": "1",
+  "form": {
+    "bind_type": "ibu",
+    "ec_bind_type": "ec_ibu",
+    "default_bind_path": "/model/instance/Blood_Test",
+    "fields": [
+      {
+        "name": "id",
+        "shouldLoadValue": true
+      },
+      {
+        "name": "existing_location",
+        "bind": "/model/instance/Blood_Test/existing_location",
+        "shouldLoadValue": true
+      },
+      {
+        "name": "Village",
+        "bind": "/model/instance/Blood_Test/Village",
+        "shouldLoadValue": true
+      },
+      {
+        "name": "Province",
+        "bind": "/model/instance/Blood_Test/Province",
+        "shouldLoadValue": true
+      },
+      {
+        "name": "Sub-district",
+        "bind": "/model/instance/Blood_Test/Sub-district",
+        "shouldLoadValue": true
+      },
+      {
+        "name": "District",
+        "bind": "/model/instance/Blood_Test/District",
+        "shouldLoadValue": true
+      },
+      {
+        "name": "Sub-village",
+        "bind": "/model/instance/Blood_Test/Sub-village",
+        "shouldLoadValue": true
+      },
+      {
+        "name": "tandaVitalTDSistolik",
+        "bind": "/model/instance/Blood_Test/td_sistolik"
+      },
+      {
+        "name": "tandaVitalTDDiastolik",
+        "bind": "/model/instance/Blood_Test/td_diastolik"
+      },
+      {
+        "name": "pulse",
+        "bind": "/model/instance/Blood_Test/pulse"
+      },
+      {
+        "name": "ahr",
+        "bind": "/model/instance/Blood_Test/ahr"
+      },
+      {
+        "name": "submissionDate",
+        "bind": "/model/instance/Blood_Test/today"
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+[{
+  "_id": "e6c823f4d2bc4c9caca1193fe0084cf2",
+  "_rev": "2-1400d8faaf26794bc69e8415d8b7e795",
+  "type": "Event",
+  "dateCreated": "2017-05-10T11:20:35.690Z",
+  "serverVersion": 1494415292031,
+  "identifiers": {
+  },
+  "baseEntityId": "fc9d5c18-253f-440b-8507-1c34f9ac4168",
+  "locationId": "null",
+  "eventDate": "2017-05-07T16:00:00.000Z",
+  "eventType": "Blood Test",
+  "formSubmissionId": "26a7a266-e6b3-4b2b-b26d-5813f42e764c",
+  "providerId": "user28",
+  "duration": 0,
+  "obs": [
+    {
+      "fieldType": "concept",
+      "fieldDataType": "integer",
+      "fieldCode": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "values": [
+        "97"
+      ],
+      "formSubmissionField": "tandaVitalTDSistolik",
+      "humanReadableValues": [
+      ]
+    },
+    {
+      "fieldType": "concept",
+      "fieldDataType": "integer",
+      "fieldCode": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "values": [
+        "79"
+      ],
+      "formSubmissionField": "tandaVitalTDDiastolik",
+      "humanReadableValues": [
+      ]
+    },
+    {
+      "fieldType": "concept",
+      "fieldDataType": "integer",
+      "fieldCode": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "values": [
+        "74"
+      ],
+      "formSubmissionField": "pulse",
+      "humanReadableValues": [
+      ]
+    },
+    {
+      "fieldType": "concept",
+      "fieldDataType": "integer",
+      "fieldCode": "160632AAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "parentCode": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "values": [
+        "false"
+      ],
+      "formSubmissionField": "ahr",
+      "humanReadableValues": [
+      ]
+    }
+  ],
+  "entityType": "ibu",
+  "version": 1494415235690
+}]
